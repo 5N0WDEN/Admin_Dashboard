@@ -26,7 +26,7 @@ const DashboardBox = (props) =>{
 
     return (
         <>
-            <CardActionArea className="dashboardBox" style={{
+            <div className="dashboardBox" style={{
             backgroundImage: `linear-gradient(to right, ${props.color?.[0]}, ${props.color?.[1]})`
             }}>
                 {
@@ -46,7 +46,7 @@ const DashboardBox = (props) =>{
                         {
                             props.icon ?
                             <span className="icon">
-                                {props.icon? props.icon : ''}
+                                {props.icon ? props.icon : ''}
                             </span>
 
                             :
@@ -59,51 +59,49 @@ const DashboardBox = (props) =>{
                 <div className="d-flex align-items-center w-100 bottomEle">
                     <h6 className="text-white mb-0 mt-0">Last Month</h6>
                     <div className="ml-auto toggleIcon">
-                        <div>
-                            <IconButton
-                                aria-label="more"
-                                id="long-button"
-                                aria-controls={open ? 'long-menu' : undefined}
-                                aria-expanded={open ? 'true' : undefined}
-                                aria-haspopup="true"
-                                onClick={handleClick}
-                            >
-                                <MoreVertIcon />
-                            </IconButton>
-                            <Menu
-                                className="dropdown_menu"
-                                anchorEl={anchorEl}
-                                open={open}
-                                onClose={handleClose}
-                                slotProps={{
-                                paper: {
-                                    style: {
-                                    maxHeight: ITEM_HEIGHT * 4.5,
-                                    width: '20ch',
-                                    },
+                        <IconButton
+                            aria-label="more"
+                            id="long-button"
+                            aria-controls={open ? 'long-menu' : undefined}
+                            aria-expanded={open ? 'true' : undefined}
+                            aria-haspopup="true"
+                            onClick={handleClick}
+                        >
+                            <MoreVertIcon />
+                        </IconButton>
+                        <Menu
+                            className="dropdown_menu"
+                            anchorEl={anchorEl}
+                            open={open}
+                            onClose={handleClose}
+                            slotProps={{
+                            paper: {
+                                style: {
+                                maxHeight: ITEM_HEIGHT * 4.5,
+                                width: '20ch',
                                 },
-                                list: {
-                                    'aria-labelledby': 'long-button',
-                                },
-                                }}
-                            >
-                                <MenuItem onClick={handleClose}>
-                                    <IoIosTimer/>Last Day    
-                                </MenuItem>
-                                <MenuItem onClick={handleClose}>
-                                    <IoIosTimer/>Last Week
-                                </MenuItem>
-                                <MenuItem onClick={handleClose}>
-                                    <IoIosTimer/>Last Month
-                                </MenuItem>
-                                <MenuItem onClick={handleClose}>
-                                    <IoIosTimer/>Last Year
-                                </MenuItem> 
-                            </Menu>
-                        </div>
+                            },
+                            list: {
+                                'aria-labelledby': 'long-button',
+                            },
+                            }}
+                        >
+                            <MenuItem onClick={handleClose}>
+                                <IoIosTimer/>Last Day    
+                            </MenuItem>
+                            <MenuItem onClick={handleClose}>
+                                <IoIosTimer/>Last Week
+                            </MenuItem>
+                            <MenuItem onClick={handleClose}>
+                                <IoIosTimer/>Last Month
+                            </MenuItem>
+                            <MenuItem onClick={handleClose}>
+                                <IoIosTimer/>Last Year
+                            </MenuItem> 
+                        </Menu>
                     </div>
                 </div>
-            </CardActionArea>
+            </div>
         </>
     )
 

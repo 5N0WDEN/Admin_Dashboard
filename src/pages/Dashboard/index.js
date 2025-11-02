@@ -222,7 +222,7 @@ const Dashboard = () =>{
                                     <td>$38k</td>
                                     <td>
                                         <div className="d-flex align-items-center actions w-100">
-                                            <Button className="secondary" color="secondary"><FaEye /></Button>
+                                            <Button className="secondary" color="secondary" onClick={()=>{alert("View Product");}}><FaEye /></Button>
                                             <Button className="success" color="success"><FaPencilAlt /></Button>
                                             <Button className="error" color="error"><MdDelete /></Button>
                                         </div>

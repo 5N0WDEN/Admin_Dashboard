@@ -57,7 +57,7 @@ const Header = () => {
                         </div>
 
 
-                        <div className="col-sm-3 d-flex align-items-center part2 pl-4">
+                        <div className="col-sm-3 d-flex align-items-center part2">
                             <Button className="rounded-circle mr-3" onClick={()=> 
                             context.setisToggleSidebar(!context.isToggleSidebar)}>
                                     {
@@ -296,54 +296,60 @@ const Header = () => {
                                 </Menu>
                             </div>
 
-                            <div className="myAccWrapper">
-                                <Button className="myAcc d-flex align-items-center"
-                                onClick={handleOpenMyAccDr}
+                            {
+                                context.isLogin !== true ? 
+                                <Button className="btn-blue btn-lg btn-round">Sign In</Button>
+                                :
+                                <div className="myAccWrapper">
+                                    <Button className="myAcc d-flex align-items-center"
+                                    onClick={handleOpenMyAccDr}
+                                    >
+                                        <div className="userImg">
+                                            <span className="rounded-circle">
+                                                <img src="https://e7.pngegg.com/pngimages/348/800/png-clipart-man-wearing-blue-shirt-illustration-computer-icons-avatar-user-login-avatar-blue-child-thumbnail.png"
+                                                alt='login icon'>
+                                                </img>
+                                            </span>
+                                        </div>
+
+
+                                        <div className="userInfo">
+                                            <h4>Utkarsh Mhatre</h4>
+                                            <p className="mb-0">@utakrsh007</p>
+                                        </div>
+
+                                    </Button>
+                                    <Menu
+                                    anchorEl={anchorEl}
+                                    id="account-menu"
+                                    open={openMyAcc}
+                                    onClose={handleCloseMyAccDr}
+                                    onClick={handleCloseMyAccDr}
+                                    transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+                                    anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                                 >
-                                    <div className="userImg">
-                                        <span className="rounded-circle">
-                                            <img src="https://e7.pngegg.com/pngimages/348/800/png-clipart-man-wearing-blue-shirt-illustration-computer-icons-avatar-user-login-avatar-blue-child-thumbnail.png"
-                                            alt='login icon'>
-                                            </img>
-                                        </span>
-                                    </div>
+                                    <MenuItem onClick={handleCloseMyAccDr}>
+                                    <ListItemIcon>
+                                        <PersonAdd fontSize="small" />
+                                    </ListItemIcon>
+                                    My Account
+                                    </MenuItem>
+                                    <MenuItem onClick={handleCloseMyAccDr}>
+                                    <ListItemIcon>
+                                        <IoShieldHalfSharp />
+                                    </ListItemIcon>
+                                    Reset Password
+                                    </MenuItem>
+                                    <MenuItem onClick={handleCloseMyAccDr}>
+                                    <ListItemIcon>
+                                        <Logout fontSize="small" />
+                                    </ListItemIcon>
+                                    Logout
+                                    </MenuItem>
+                                    </Menu>
+                                </div>
+                            }
 
-
-                                    <div className="userInfo">
-                                        <h4>Utkarsh Mhatre</h4>
-                                        <p className="mb-0">@utakrsh007</p>
-                                    </div>
-
-                                </Button>
-                                <Menu
-                                anchorEl={anchorEl}
-                                id="account-menu"
-                                open={openMyAcc}
-                                onClose={handleCloseMyAccDr}
-                                onClick={handleCloseMyAccDr}
-                                transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-                                anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
-                            >
-                                <MenuItem onClick={handleCloseMyAccDr}>
-                                <ListItemIcon>
-                                    <PersonAdd fontSize="small" />
-                                </ListItemIcon>
-                                My Account
-                                </MenuItem>
-                                <MenuItem onClick={handleCloseMyAccDr}>
-                                <ListItemIcon>
-                                    <IoShieldHalfSharp />
-                                </ListItemIcon>
-                                Reset Password
-                                </MenuItem>
-                                <MenuItem onClick={handleCloseMyAccDr}>
-                                <ListItemIcon>
-                                    <Logout fontSize="small" />
-                                </ListItemIcon>
-                                Logout
-                                </MenuItem>
-                                </Menu>
-                            </div>
                         </div>
                     </div>
                 </div>
