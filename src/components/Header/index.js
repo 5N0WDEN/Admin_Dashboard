@@ -298,7 +298,7 @@ const Header = () => {
 
                             {
                                 context.isLogin !== true ? 
-                                <Button className="btn-blue btn-lg btn-round">Sign In</Button>
+                                <Link to={'/login'}><Button className="btn-blue btn-lg btn-round">Sign In</Button></Link>
                                 :
                                 <div className="myAccWrapper">
                                     <Button className="myAcc d-flex align-items-center"
