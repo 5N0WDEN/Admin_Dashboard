@@ -232,7 +232,7 @@ table td .productBox{width: 270px;}
 .css-1bug3cd-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{background-color: #0858f7 !important;}
 
 .loginSection{width: 100%; height: 100vh; padding: 35px 25px; background:#fff; position: relative;}
-.loginPattern{width: 100%; height: 100%; opacity: 0.08; position: fixed; top: 0px; left: 0px; 
+.loginPattern{width: 100%; height: 100%; opacity: 0.1; position: fixed; top: 0px; left: 0px; 
 z-index: 99; pointer-events: none;} 
 
 .loginSection .loginBox{ width: 350px; height: auto; margin: auto;}
