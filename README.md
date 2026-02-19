@@ -82,7 +82,7 @@ Shows:
 
 **Status:** Frontend Completed ✅  
 **Backend:** Not yet integrated ⏳  
-**Deployment:** Not deployed  
+**Deployment:** Deployed ✅
 
 This project currently uses mock/static data for demonstration.
 
