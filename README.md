@@ -20,14 +20,16 @@ The dashboard provides administrators with:
 
 # 🖼️ Dashboard Screenshots
 
-## 1. Main Dashboard Overview
-![WhatsApp Image 2026-02-19 at 13 50 19](https://github.com/user-attachments/assets/9fba009c-7d48-4e81-879e-14696065ce3f)
+## 1. Full Dashboard Layout
+<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/d7141c66-e68b-4a28-b785-545adc41d98f" />
 
 Shows:
-- Total Users cards
-- Total Sales analytics
-- Sales visualization chart
-- Dashboard summary metrics
+- Complete admin interface layout
+- Navbar
+- Sidebar
+- Dashboard cards
+- Charts
+- Product management section
 
 ---
 
@@ -43,6 +45,7 @@ Shows:
 ---
 
 ## 3. Sidebar Navigation Panel
+![WhatsApp Image 2026-02-19 at 13 55 26](https://github.com/user-attachments/assets/3c9d8dfd-cb9b-4299-9bdf-7d34222f3d0c)
 
 Shows:
 - Dashboard navigation
@@ -64,16 +67,14 @@ Shows:
 
 ---
 
-## 5. Full Dashboard Layout
-<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/d7141c66-e68b-4a28-b785-545adc41d98f" />
+## 5. Main Dashboard Overview
+![WhatsApp Image 2026-02-19 at 13 50 19](https://github.com/user-attachments/assets/9fba009c-7d48-4e81-879e-14696065ce3f)
 
 Shows:
-- Complete admin interface layout
-- Navbar
-- Sidebar
-- Dashboard cards
-- Charts
-- Product management section
+- Total Users cards
+- Total Sales analytics
+- Sales visualization chart
+- Dashboard summary metrics
 
 ---
 
