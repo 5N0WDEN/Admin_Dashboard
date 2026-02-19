@@ -1,70 +1,236 @@
-# Getting Started with Create React App
+# UTIFY Admin Dashboard 👕📊
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+UTIFY Admin Dashboard is a modern, responsive, and scalable frontend admin interface built for managing and monitoring the UTIFY clothing eCommerce platform. It provides administrators with analytics, product management views, notifications, and performance insights through an intuitive and professional dashboard interface.
 
-## Available Scripts
+This project demonstrates frontend engineering, component-based architecture, dashboard design, and data visualization using React and modern UI libraries.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# 🏗️ System Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The dashboard provides administrators with:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Sales analytics overview
+- User statistics
+- Product management interface
+- Notifications and activity monitoring
+- Structured admin navigation
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 🖼️ Dashboard Screenshots
 
-### `npm run build`
+## 1. Main Dashboard Overview
+![WhatsApp Image 2026-02-19 at 13 50 19](https://github.com/user-attachments/assets/9fba009c-7d48-4e81-879e-14696065ce3f)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Shows:
+- Total Users cards
+- Total Sales analytics
+- Sales visualization chart
+- Dashboard summary metrics
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 2. Product Management Table
+![WhatsApp Image 2026-02-19 at 13 54 01](https://github.com/user-attachments/assets/7aa4d654-c5ca-46b5-8d07-e44ba624d024)
 
-### `npm run eject`
+Shows:
+- Product list
+- Category, Brand, Price, Stock
+- Rating, Orders, Sales data
+- Product action controls (View, Edit, Delete)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 3. Sidebar Navigation Panel
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Shows:
+- Dashboard navigation
+- Products section
+- Orders section
+- Notifications
+- Settings
+- Logout functionality
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 4. Notifications Panel
+![WhatsApp Image 2026-02-19 at 13 59 25](https://github.com/user-attachments/assets/96f2a4a6-5d8f-48da-85de-7e54f4baf872)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Shows:
+- Real-time activity notifications
+- User activity updates
+- Order and system notifications
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 5. Full Dashboard Layout
+<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/d7141c66-e68b-4a28-b785-545adc41d98f" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Shows:
+- Complete admin interface layout
+- Navbar
+- Sidebar
+- Dashboard cards
+- Charts
+- Product management section
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# 🚧 Project Status
 
-### Making a Progressive Web App
+**Status:** Frontend Completed ✅  
+**Backend:** Not yet integrated ⏳  
+**Deployment:** Not deployed  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project currently uses mock/static data for demonstration.
 
-### Advanced Configuration
+Backend APIs, authentication, and database integration are planned for future development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+# ✨ Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📊 Analytics Dashboard
+- Total users overview
+- Total sales overview
+- Sales visualization charts
+- Dashboard summary cards
 
-### `npm run build` fails to minify
+## 📦 Product Management Interface
+- Product listing table
+- Product details display:
+  - Product name
+  - Category
+  - Brand
+  - Price
+  - Stock
+  - Rating
+  - Orders
+  - Sales metrics
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Product actions:
+  - View product
+  - Edit product
+  - Delete product
+
+## 🔔 Notifications System
+- User activity monitoring
+- Recent actions display
+- Order activity notifications
+
+## 🧭 Admin Navigation
+- Sidebar navigation
+- Dashboard access
+- Products section
+- Orders section
+- Notifications section
+- Settings section
+
+## 📱 Responsive Design
+- Modern UI design
+- Responsive layout
+- Scalable component structure
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- React.js 19
+
+## UI Frameworks
+- Material UI (MUI)
+- Bootstrap 4
+- Emotion (Styling)
+
+## Charts & Visualization
+- React Google Charts
+
+## Routing
+- React Router DOM
+
+## Icons
+- Material UI Icons
+- React Icons
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```
+git clone https://github.com/YOUR_USERNAME/utify-admin-dashboard.git
+```
+
+## Navigate into project
+
+```
+cd utify-admin-dashboard
+```
+
+## Install dependencies
+
+```
+npm install
+```
+
+## Run project
+
+```
+npm start
+```
+
+Runs on:
+
+```
+http://localhost:3000
+```
+
+---
+
+# 🔮 Future Improvements
+
+Planned backend and advanced features:
+
+- Backend integration (Node.js / Django)
+- REST API integration
+- Admin authentication
+- Real database connectivity
+- Add/Edit/Delete products functionality
+- User management system
+- Order management system
+- Role-based access control
+- Real-time analytics
+
+---
+
+# 🎯 Purpose of Project
+
+This project demonstrates:
+
+- React.js frontend development
+- Dashboard UI development
+- Component-based architecture
+- Admin panel design
+- Data visualization integration
+- Scalable frontend structure
+
+---
+
+# ⚠️ Note
+
+This project is currently a frontend-only implementation intended for portfolio and demonstration purposes. Backend services and database integration are planned.
+
+---
+
+# 👨‍💻 Author
+
+Utkarsh Mhatre
+
+---
+
+# 📄 License
+
+This project is for educational and portfolio use.
